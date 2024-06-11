@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background-hero.webp);
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.pikachu {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    transform: scale(0.5);
+}
+.apapachado {
+    animation: apapachado 1s ease 1;
+}
+
+.boton {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(red 50%,white 50%);
+    border-radius: 100%;
+    border: 7px solid black;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transform: translateX(-30%) translateY(+200%);
+    transition: all ease 300ms;
+}
+.boton:hover {
+    transform: translateX(-30%) translateY(+200%) scale(1.1) rotate(360deg);
+}
+.linea {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circulo {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+}
+
+.pikachu .boca {
+    position: absolute;
+    top: 44%;
+    left: 36%;
+}
+
+.pikachu .brazo-izq {
+    position: absolute;
+    top: 60%;
+    left: 26%;
+    transform-origin: top left;
+}
+
+.pikachu .brazo-der {
+    position: absolute;
+    top: 60%;
+    left: 51%;
+    transform-origin: top right;
+}
+.manitas {
+    animation: manitas 1s ease 1;
+}
+.manitaizq {
+    animation: manitasizq 1s ease 1;
+}
+.manitader {
+    animation: manitasder 1s ease 1;
+}
+.pikachu .cola {
+    position: absolute;
+    top: 25%;
+    left: 62%;
+    z-index: -1;
+    transform-origin: bottom left;
+}
+.tatano3000 {
+    animation: tatano300 2s ease-in-out infinite;
+}
+
+.pikachu .ojo-izq {
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    transition: all ease 200ms;
+}
+
+.ojo-cerrado {
+    animation: pestaneo 200ms ease-in-out 2;
+}
+
+.pikachu .ojo-der {
+    position: absolute;
+    top: 38%;
+    left: 53%;
+    transition: all ease 200ms;
+}
+
+@keyframes pestaneo {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes tatano300 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes apapachado {
+    0% {
+        transform: scale(0.5) scaleY(1);
+    }
+    50% {
+        transform: scale(0.5) scaleY(.95);
+    }
+    100% {
+        transform: scale(0.5) scaleY(1);
+    }
+}
+
+@keyframes manitas {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-5%) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes manitaizq {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-5%) rotate(50deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes manitader {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-5%) rotate(20deg);
+    }
+    100% {
+        transform: translateY(0deg);
+    }
+}
