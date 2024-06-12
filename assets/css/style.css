@@ -24,7 +24,6 @@ body {
     height: 1049px;
     background-image: url(../img/pikachu_cuerpo.png);
     transform: scale(.5);
-    z-index: 100;
 }
 
 .apapachado {
